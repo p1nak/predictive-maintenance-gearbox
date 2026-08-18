@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# VS Code
+.vscode/
+
+# Raw dataset
+Healthy Data/
+BrokenTooth Data/
+
+# Temporary files
+*.tmp
+*.log
