@@ -1,90 +1,45 @@
-\# ⚙️ Gearbox Predictive Maintenance Using Machine Learning
+# Gearbox Predictive Maintenance Using Machine Learning
 
-
-
-A machine learning-based predictive maintenance project for detecting
-
-gearbox condition from multi-sensor vibration data.
-
-
+A machine learning-based predictive maintenance system for detecting
+gearbox health conditions using multi-sensor vibration data.
 
 The project analyzes vibration signals collected from four sensors,
+extracts statistical and signal-based features, performs exploratory
+data analysis, and evaluates multiple machine learning classification
+models to distinguish between healthy and broken-tooth gearbox
+conditions.
 
-extracts statistical and signal-processing features, performs
+---
 
-exploratory data analysis, and trains machine learning classification
+## Overview
 
-models to distinguish between:
+Gearbox failures can be identified through changes in vibration
+behavior. This project investigates vibration signals from a gearbox
+and develops a data-driven classification pipeline for condition
+monitoring.
 
-
-
-\- 🟢 Healthy Gearbox
-
-\- 🔴 Broken Tooth Gearbox
-
-
-
-\---
-
-
-
-\## 📌 Project Overview
-
-
-
-Gearbox faults can produce changes in vibration patterns before or
-
-during failure. By analyzing vibration signals and extracting meaningful
-
-features, machine learning can be used to identify the condition of a
-
-gearbox.
-
-
-
-This project implements a complete machine learning workflow:
-
-
+The complete workflow consists of:
 
 ```text
-
 Raw Vibration Data
-
-&#x20;       ↓
-
-Data Loading \& Signal Visualization
-
-&#x20;       ↓
-
+        |
+        v
+Data Loading & Signal Analysis
+        |
+        v
 Feature Extraction
-
-&#x20;       ↓
-
-Feature Dataset
-
-&#x20;       ↓
-
+        |
+        v
 Exploratory Data Analysis
-
-&#x20;       ↓
-
-Feature Analysis
-
-&#x20;       ↓
-
+        |
+        v
 Machine Learning
-
-&#x20;       ↓
-
+        |
+        v
 Model Evaluation
-
-&#x20;       ↓
-
-Saved ML Model
-
-&#x20;       ↓
-
-New Gearbox Prediction
-
-
-
+        |
+        v
+Saved Prediction Model
+        |
+        v
+New Gearbox Condition Prediction
